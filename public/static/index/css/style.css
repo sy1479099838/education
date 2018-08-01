@@ -1,0 +1,38 @@
+*{padding:0;margin: 0;}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+a{color:#000000;text-decoration:none;}
+li{list-style:none;}
+body::-webkit-scrollbar {display: none;}
+.bigBox{max-width:80%;width: 80%;margin-left: 10%; }
+.bigBox>.head{height: 110px;}
+.bigBox>.head>.logo{width: 50%;font-size: 18px;}
+.bigBox>.head>.logo>img{display: inline-block;height: 55px;margin-top: 10px;}
+.bigBox>.head>.logo>i{color:#4B4B4B;}
+.bigBox>.head>.search{width: 49%;height: 110px;line-height: 110px;text-align: right;}
+.bigBox>.head>.search>button{height: 40px;line-height: 40px;text-align: center;padding: 0 30px;font-size: 20px;color:#ffffff;border:none;background: #1E50AE;float: right;margin-top: 35px;}
+.bigBox>.head>.search>input{height: 40px;line-height: 40px;float: right;margin-top: 35px;width: 250px;padding-left: 10px;}
+.menu{background: #2B2B2B;height:50px;line-height: 50px;font-size: 20px;}
+.menu a{color:#ffffff;}
+.menu>.menu-content{max-width:80%;width: 80%;margin-left: 10%;color:#ffffff;}
+.menu>.menu-content>div{display: inline-block;height: 100%;/*padding:0 30px;*/cursor:pointer;position: relative;margin-right: 10px;}
+.menu>.menu-content>div>a{display: inline-block;height: 100%;padding:0 30px;width: 100%;}
+.menu>.menu-content>div:hover{background: #1E50AE;}
+.menu>.menu-content>div:hover>.childrenMenu{display: block;}
+.menu>.menu-content>div>.childrenMenu{display:none;position:absolute;top:50px;left:0;background: #1E50AE;text-align: center;font-size: 14px;}
+.menu>.menu-content>div>.childrenMenu>li{padding:0 30px;height: 30px;line-height: 30px;}
+.menu>.menu-content>div>.childrenMenu>li:nth-child(1){height: 15px;}
+.tag{position:relative;}
+.tag em{display:block; border-width:7px; position:absolute; bottom:0; left:25px;border-style:dashed dashed solid; border-color:transparent transparent #1E50AE;font-size:0; line-height:0;}
+.menu>.menu-content>div>.childrenMenu>li:hover{background: #0C40AE;}
+.menu>.menu-content>div>.childrenMenu>.third{position: relative;}
+
+.menu>.menu-content>div>.childrenMenu>.third>.thirdMenu{display: none;position:absolute;left:103%;top:0;background:#1E50AE; }
+.menu>.menu-content>div>.childrenMenu>.third:hover>.thirdMenu{display: block;}
+.menu>.menu-content>div>.childrenMenu>.third>.thirdMenu>li{padding:0 30px;height: 30px;line-height: 30px;}
+.menu>.menu-content>div>.childrenMenu>.third>.thirdMenu>li:hover{background: #0C40AE;}
+
+
+
+

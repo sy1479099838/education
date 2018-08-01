@@ -1,0 +1,8 @@
+.top{height: 50px;width: 100%;line-height: 50px;background: #005e10;}
+.top>span{height: 50px;line-height: 50px;color: #ffffff;font-size: 20px;display: inline-block;float: left;}
+.top>span:nth-child(1){width: 15%;text-align: center;}
+.top>span:nth-child(2){width: 10%;text-align: center;font-size: 16px;}
+.top>span:nth-child(3){width: 50%;text-align: center;font-size: 18px;}
+.top>span:nth-child(4){width: 25%;text-align: center;font-size: 14px;color: #ffffff;}
+
+

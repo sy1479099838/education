@@ -1,0 +1,42 @@
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+.static-box{}
+.static-box>h2{text-align: center;margin-bottom: 50px;}
+.static-box>.content{width: auto;margin: 10px 5%;}
+.static-box>.static-top-step{}
+.static-box>.static-top-step>span{border:1px solid #bdbdbd;color: #bdbdbd;display: inline-block;width: auto;height: 50px;line-height: 50px;font-size: 22px;padding:0 10px;float: left;margin-left: -1px;}
+.static-box>.static-top-step>span:nth-child(1){border:1px solid #18a689; background: #18a689;color: #ffffff;}
+.static-box>.static-choice{border:1px solid #bfbfbf;border-radius: 3px;}
+.static-box>.static-choice>.content-left{height: 100%;width: 20%;border: none;}
+.static-box>.static-choice>.content-left>span{display: inline-block;width: 100%;text-align: right;height: 50px;margin-top: 40px;font-size: 18px;}
+.static-box>.static-choice>.content-right{height: 100%;width: 80%;border: none;}
+.static-box>.static-choice>.content-right>span{display: inline-block;padding:0 20px;text-align: left;height: 50px;margin-top: 40px;font-size: 18px;float: left;}
+.secend{margin-bottom: 30px;}
+.secend button{background: #009bdd;border:none;color:#ffffff;padding: 10px 30px;border-radius: 8px;font-size: 18px;}
+
+.static-box>.static-appUpload{display: none;border:1px solid #bfbfbf;border-radius: 3px;}
+.static-box>.content>.content-div{width: 80%;margin-left: 10%;}
+.static-box>.static-appUpload>.static-appUpload-head{margin-top: 30px;font-size: 16px;margin-bottom: 30px;}
+#file{display: none;}
+.static-box>.static-appUpload>.static-appUpload-file{font-size: 16px;}
+.static-box>.static-appUpload>.static-appUpload-file>input{display: inline-block;width: 35%;height: 30px;border-radius: 3px;background: none;border:1px solid #bdbdbd;}
+.static-box>.static-appUpload>.static-appUpload-file>select{display: inline-block;width: 35%;height: 30px;border-radius: 3px;background: none;border:1px solid #bdbdbd;}
+.static-box>.static-appUpload>.static-appUpload-file>button{background: #009bdd;border:none;color:#ffffff;padding: 0 25px;border-radius: 6px;font-size: 16px;display: inline-block;height: 30px;}
+.static-box>.static-appUpload>.static-appUpload-file>span{display: inline-block;width: 160px;text-align:right;height: 30px;line-height: 30px;float: left;}
+
+.static-box>.static-result{display: none;border:1px solid #bfbfbf;position: relative;}
+.position{position: absolute;right: 0;top:0;width: 0;height: 0;border-top: 80px solid #65cab3;border-left: 80px solid transparent; }
+.position1{position: absolute;right: 1px;top:1px;width: 0;height: 0;border-top: 76px solid #ffffff;border-left: 76px solid transparent;}
+.position2{position: absolute;right: 0;top:0;height: 80px;width: 80px;text-align: center;transform:rotate(45deg);line-height: 35px;color:#46c9a0;}
+.static-box>.static-result>.left{width: 25%;height: 100%;margin:30px 0 0 5%;float: left;line-height: 45px;}
+.static-box>.static-result>.left>.logo{height: 100px;}
+.static-box>.static-result>.left>.logo img{height: 100%;}
+.static-box>.static-result>.left>.logo span{display: inline-block;height: 100%;float: right;width: 50%;}
+.static-box>.static-result>.left>.logo span button{background: none;border:none;margin-top: 20px;font-size:20px;}
+.static-box>.static-result>.right{width: 70%;margin-top: 30px;float: left;}
+.static-box>.static-result>.right table{width: 100%; border-collapse: separate;}
+.static-box>.static-result>.right table tr th{text-align: center;font-size: 17px;}
+.static-box>.static-result>.right table tr td{text-align: center;height: 65px;line-height: 65px;font-size: 17px;}
+
+
