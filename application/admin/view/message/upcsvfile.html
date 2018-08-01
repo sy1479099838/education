@@ -1,0 +1,44 @@
+<button class="closeTableBox fa fa-times-circle-o" onclick="closeTableBox()"></button>
+<h3 style="text-align: center;">预览结果</h3>
+<p>
+    <button class="fr" onclick="SendMsg('{$filename}')">发&nbsp;送</button>
+    <span>
+        全选 <input id="AllCheck" type="checkbox" name="AllCheck" placeholder="" onclick="AllCheck()" value="123456">
+    </span>
+</p>
+<table class="message-table-2">
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>电话号码</th>
+        <th>分类</th>
+    </tr>
+    {volist name="list" id="vo"}
+    <tr style="background: #e3e3e3;">
+        <td style="text-align: left;">
+            <input type="checkbox" id="XuanCheck{$vo.name.1}" name="XuanCheck" placeholder="" onclick="XuanCheck({$vo.name.1})" value="{$vo.name.1}">
+            <p class="fa fa-caret-down" style="height: 18px;font-size: 22px;cursor:pointer;" id="clickButton{$vo.name.1}" onclick="openTable({$vo.name.1})">&nbsp;<span style="font-size: 16px;">{$vo.name.0}</span></p>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    {present name="vo.children"}
+
+    <tbody class="table{$vo.name.1}">
+    {volist name="vo.children" id="vo1"}
+    <tr>
+        <td style="text-indent: 2em;">
+            <input type="checkbox" name="PhoneCheck" value="{$vo1.5}" placeholder="" onclick="checkOne({$vo.name.1})">
+            {$key+1}
+        </td>
+        <td>{$vo1.1}</td>
+        <td>{$vo1.2}</td>
+        <td>{$vo1.3}</td>
+    </tr>
+    {/volist}
+    </tbody>
+    {/present}
+    {/volist}
+</table>
+<input type="hidden" name="filename" id="filePath" value="{$filename}">

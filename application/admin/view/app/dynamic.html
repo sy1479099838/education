@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake后台</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__CSS__/app/appstatic.css" rel="stylesheet">
+    <script src="__JS__/jquery.min.js?v=2.1.4"></script>
+    <script src="__JS__/app/appstatic.js"></script>
+</head>
+
+<body>
+<div class="static-box">
+    <h2>动态分析</h2>
+    <div class="content static-top-step">
+        <span>功能选择</span>
+        <span>app上传</span>
+        <span>app检测</span>
+        <div class="cb"></div>
+    </div>
+    <div class="content static-choice">
+        <div class="content-left fl">
+            <span>应用类型：</span>
+        </div>
+        <div class="content-right fr">
+            <span>
+                <input name="staticRadio" value="1" type="radio" placeholder="">&nbsp;&nbsp;游戏类
+            </span>
+            <span>
+                <input name="staticRadio" value="2" type="radio" placeholder="">&nbsp;&nbsp;金融类
+            </span>
+            <span>
+                <input name="staticRadio" value="3" type="radio" placeholder="">&nbsp;&nbsp;其他类
+            </span>
+        </div>
+        <!-------------------------->
+        <div class="content-left fl">
+            <span>选择标准功能：</span>
+        </div>
+        <div class="content-right fr">
+            <span>
+                <input name="staticCheck" value="1" type="checkbox" placeholder="">&nbsp;&nbsp;应用安全检测
+            </span>
+            <span>
+                <input name="staticCheck" value="2" type="checkbox" placeholder="">&nbsp;&nbsp;源代码安全检测
+            </span>
+            <span>
+                <input name="staticCheck" value="3" type="checkbox" placeholder="">&nbsp;&nbsp;数据安全检测
+            </span>
+            <span>
+                <input name="staticCheck" value="4" type="checkbox" placeholder="">&nbsp;&nbsp;人工安全检测
+            </span>
+        </div>
+        <div class="cb"></div>
+        <br>
+        <div class="secend" style="text-align: center;">
+            <!--<button>上一步</button>-->
+            <button onclick="Nextstep(2)">下一步</button>
+        </div>
+    </div>
+    <div class="content static-appUpload"></div>
+    <div class="content static-result">
+        <span class="position"></span>
+        <span class="position1"></span>
+        <span class="position2">动态</span>
+        <div class="left">
+            <div class="logo">
+                <img src="/static/admin/images/123.jpg" alt="">
+            </div>
+            应用名称：万里通 <br>
+            版本号：4.1.0(4010)<br>
+            提交时间：2018-5-21 <br>
+            <!--md5：9068f0b57b9a2a9b7f25e00b8c112497 <br>-->
+        </div>
+        <div class="right">
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>功能类型</th>
+                    <th>安全性</th>
+                    <th>预计时间</th>
+                    <th>结果状态</th>
+                </tr>
+                <tr>
+                    <td>应用安全检测</td>
+                    <td>---</td>
+                    <td>5-8分钟</td>
+                    <td>
+                        <a style="color:#509bee;">查看详情</a>
+                        <!--<a style="color:#e9791a">下载报告</a>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>源代码安全检测</td>
+                    <td>---</td>
+                    <td>20-30分钟</td>
+                    <td>
+                        <!--<a style="color:#989499;">没有选择测试，可以多选</a>-->
+                        <a style="color:#509bee;">查看详情</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>数据安全检测</td>
+                    <td>---</td>
+                    <td>30-40分钟</td>
+                    <td>
+                        <!--<a style="color:#989499;">没有选择测试，可以多选</a>-->
+                        <a style="color:#509bee;">查看详情</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>人工专业安全检测</td>
+                    <td>---</td>
+                    <td>3-5天</td>
+                    <td>
+                        <a style="color:#509bee;">查看详情</a>
+                        <!--<a style="color:#e9791a">下载报告</a>-->
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!--<a style="color:#509bee;">查看详情</a>&nbsp;&nbsp;-->
+                        <a style="color:#e9791a">下载报告</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="cb"></div>
+    </div>
+
+</div>
+</body>
+</html>

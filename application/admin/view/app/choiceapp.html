@@ -1,0 +1,50 @@
+<div class="content-div static-appUpload-head">
+
+</div>
+<div class="content-div static-appUpload-file">
+    <span><span class="fr">程序安装文件：</span>&nbsp;<b style="font-size: 25px;color:red;float: right;padding-top: 4px;">&nbsp;*&nbsp;</b></span>
+    <input type="text" id="fileName" value="" placeholder="" name="appFileName" disabled>
+    <input type="file" id="file" name="appFile" onchange="getFilePath()">
+    &nbsp;&nbsp;<button onclick="selectFile();">选择文件</button>
+</div>
+<div class="content-div static-appUpload-file">
+    <span>&nbsp;</span>
+    <label style="font-size: 14px;color:#a4a4a4;">请上传小于150MB的apk文件</label>
+</div><br>
+<div class="content-div static-appUpload-file">
+    <span><span class="fr">程序名称：</span>&nbsp;<b style="font-size: 25px;color:red;float: right;padding-top: 4px;">&nbsp;*&nbsp;</b></span>
+    <input type="text" value="" placeholder="">
+</div><br>
+<div class="content-div static-appUpload-file">
+    <span><span class="fr">程序版本号：</span>&nbsp;<b style="font-size: 25px;color:red;float: right;padding-top: 4px;">&nbsp;*&nbsp;</b></span>
+    <input type="text" value="" placeholder="">
+</div><br>
+<div class="content-div static-appUpload-file">
+    <span><span class="fr">应用类型：</span>&nbsp;<b style="font-size: 25px;color:red;float: right;padding-top: 4px;">&nbsp;*&nbsp;</b></span>
+    <select>
+        <option>选择应用类型</option>
+        <option>联网手机游戏</option>
+        <option>弱联网手机游戏</option>
+        <option>手机银行</option>
+        <option>移动支付</option>
+        <option>移动电商</option>
+        <option>移动办公</option>
+        <option>移动视频</option>
+        <option>移动社交</option>
+        <option>其他</option>
+    </select>
+    <!--<input type="text" value="" placeholder="">-->
+</div><br>
+<div class="content-div static-appUpload-file">
+    <span><span class="fr">自定义别名：</span>&nbsp;</span>
+    <input type="text" value="" placeholder="">
+</div><br>
+<!--<div class="content-div" style="font-size: 18px;">-->
+    <!--<br>-->
+    <!--<input type="checkbox" placeholder="" >&nbsp;&nbsp;检测完成后自动删除apk-->
+<!--</div>-->
+<br>
+<div class="secend" style="text-align: center;">
+    <button onclick="previousStep(1)">上一步</button>
+    <button onclick="Nextstep(3)">下一步</button>
+</div>

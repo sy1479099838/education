@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四川灵先创科技有限公司</title>
+    <link href="/static/admin/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="/static/admin/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__CSS__/style.css" rel="stylesheet">
+    {block name="CssName"}{/block}
+    <script src="/static/admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="/static/admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__JS__/public.js"></script>
+    {block name="jsName"}{/block}
+</head>
+<body>
+<div class="bigBox">
+    <div class="head">
+        <div class="logo fl">
+            <img src="{$logo}" alt="logo"><br>
+            <i>做客户信赖的信息安全专家</i>
+        </div>
+        <div class="search fr">
+            <button class="fa fa-search"></button>
+            <input type="text" class="" placeholder="输入你想知道的内容">
+        </div>
+    </div>
+</div>
+<div class="cb"></div>
+<div class="menu">
+    <div class="menu-content">
+        <div class="fl">
+            <a href="">人员去向</a>
+            <ul class="childrenMenu">
+                <li style="background: #ffffff;" class="tag">
+                    <em></em>
+                </li>
+                <li class="third">
+                    人员去向
+                    <ul class="thirdMenu">
+                        <li>12345789</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bigBox">
+    {block name="content"}
+    {/block}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake后台</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__CSS__/email/sendemail.css" rel="stylesheet">
+    <script src="__JS__/jquery.min.js?v=2.1.4"></script>
+    <script src="__JS__/public.js"></script>
+    <script src="__JS__/plugins/ueditor/ueditor.config.js"></script>
+    <script src="__JS__/plugins/ueditor/ueditor.all.js"></script>
+    <script src="__JS__/email/sendemail.js"></script>
+</head>
+<body>
+<h2 class="head-title">测试钓鱼邮件发送</h2><br>
+<div class="email">
+    <p class="email-method">
+        <button onclick="Choice(1)">单条发送</button>
+        <button onclick="Choice(2)">批量发送</button>
+    </p>
+    <br>
+    <form class="email-sendOne" method="post" onsubmit="return false" id="sendOne">
+        <!--<span>单条短信发送</span>-->
+        <p>
+            <span>接收邮箱：</span>
+            <input type="email" name="EmailN" placeholder="" id="EmailN" >
+        </p>
+        <p>
+            <span>邮件标题：</span>
+            <input type="text" name="mailTitle" placeholder="请输入邮件标题！">
+        </p>
+        <p>
+            <span>添加附件：</span>
+            <b>是：</b>&nbsp;<input type="radio" name="Enclosure" value="1">&nbsp;&nbsp;&nbsp;
+            <b>否：</b>&nbsp;<input type="radio" name="Enclosure" value="0" checked>
+        </p>
+        <p class="Enclosure">
+            <span>&nbsp;</span>
+            <button class="choiceEnclosure">选择附件</button>
+            <input type="text" value="" placeholder="请选择附件" id="Enclosure" name="EnclosureFile">
+            <input type="file" name="CsvFile" id="EnclosureFileCsv" style="display: none;">
+        </p>
+
+        <p>
+            <span>接&nbsp;&nbsp;收&nbsp;&nbsp;人：</span>
+            <input type="text" name="users" placeholder="" id="users" >
+            <button onclick="sendEmail()" class="fa fa-envelope-o">&nbsp;&nbsp;发送邮件</button>
+            <label class="sendState">（发送状态：未发送！）</label>
+        </p>
+        <p>
+            <span>邮件内容：</span>
+        </p>
+    </form>
+    <div class="email-sendTwo">
+        <p>
+            <button onclick="OpenMoreFile()">请选择csv文件：</button>
+            <input type="text" value="" placeholder="选择csv文件" id="csvFile" name="csvFile">
+            <input type="file" name="CsvFile" id="fileCsv" style="display: none;" onchange="getCsvPath()">
+            <button onclick="fileUpload()" class="UpButton">上传并预览</button>
+        </p>
+        <!--<p>-->
+            <!--<a href="javascript:;" class="Explain">查看使用说明</a>&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="javascript:;" class="down">点击下载模板</a>-->
+            <!--<a href="javascript:;" class="sendEmail">点击发送邮件</a>-->
+        <!--</p>-->
+        <br>
+        <p>
+            <span>邮件内容：</span>
+        </p>
+    </div>
+    <div class="input-group col-sm-7">
+        <script id="container" type="text/plain"></script>
+    </div>
+</div>
+</body>
+</html>
