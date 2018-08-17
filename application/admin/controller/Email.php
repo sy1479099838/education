@@ -114,4 +114,9 @@ class Email extends Base{
             }
         }
     }
+
+    public function filebox()
+    {
+        echo 1423;
+    }
 }
